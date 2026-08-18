@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100%;
+            background-image: url('background2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: Cooked, Arial, sans-serif;
+            color: white;
+        }
+
+        @font-face { 
+            font-family: Cooked; 
+            src: url('working attitude.ttf'); 
+        } 
+
+        .logo {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .logo img {
+            width: 600px;
+            height: auto;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content p {
+            font-size: 3em;
+            margin: 25px;
+        }
+        .info-box {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;           
+            background: rgba(0,0,0,0.5);
+            border-radius: 8px;
+        }
+
+        .info-box .info-logo {
+            flex: 0 0 auto;
+        }
+
+        .info-box .info-logo img {
+            width: 300px;
+            height: auto;
+        }
+
+        .info-box .info-text {
+            flex: 1;
+            margin-left: 20px;
+            font-size: 2em;
+        }
+
+        .option-box {
+            display: flex;
+            background: transparent;
+            border-radius: 0;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 1000px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .option-btn {
+            width: 300px;
+            text-align: center;
+            padding: 12px 0;
+            background-color: #e5ff00;
+            color: black;
+            font-size: 2em;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .option-btn:hover {
+            background-color: #989a00;
+        }
+
+        .footer {
+            width: 100%;
+            max-width: 95%;
+            margin: 40px auto 0;
+            padding: 20px;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-left {
+            margin-right: auto;
+        }
+
+        .footer-left a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 1.1em;
+        }
+
+        .footer-left a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-right {
+            color: white;
+            font-size: 1.1em;
+            text-align: right;
+        }
+
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            width: 90%;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .screenshots {
+            flex: 1; /* Left side */
+        }
+
+        .screenshots img {
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+
+        .description {
+            flex: 2; /* Right side takes more space */
+            font-size: 2em;
+            line-height: 1.6;
+            color: rgb(255, 255, 255); /* Make text black for readability */
+            padding: 20px;
+            border-radius: 6px;
+        }
+    </style>
+    <title>Cooked: how to play</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="title3.png">
+    </div>
+    <div class="content">
+        <p>Start your own food business!</p>
+    </div>
+    <div class="content" style="width: 100%; height: 30px; overflow: hidden;">
+        <img src="bar.png" width=2000 height=5>
+    </div>
+    <div class="content">
+        <p>How to play</p>
+    </div>
+    <div class="two-column">
+        <div class="screenshots">
+            <img src="screenshot1.jpg">
+        </div>
+        <div class="description">
+            <h2>Introduction</h2>
+            <p>
+                Welcome to Cooked! This game gives you an opportunity to build and expand a restaurant, and you are the one who is in charge of everything! Your goal is to get 100 five star reviews while spending the least number of days possible.
+            </p>
+        </div>
+    </div>
+    <div class="two-column">
+        <div class="screenshots">
+            <img src="screenshot2.jpg">
+        </div>
+        <div class="description">
+            <h2>Main Screen</h2>
+            <p>
+                In this game, you need to buy chairs and supplies constantly to keep the restaurant running. You can switch to three different pages by clicking the buttons on top of the screen. The seats are in the middle of the screen. There are three areas (A, B,C), which means there are 27 slots in total. To place a seat, you need to go to the seat page and simply long click any seat if you want to remove them. After serving all the dishes you want, long click "Next period" and keep going. Make sure you are ready to face any accidents coming right up. There are chances you might lose or gain money due to certain events!
+            </p>
+        </div>
+    </div>
+    <div class="two-column">
+        <div class="screenshots">
+            <img src="screenshot3.jpg">
+        </div>
+        <div class="description">
+            <h2>Seats</h2>
+            <p>
+                To get a certain star review, it depends on the quality of the seats. For example, if you are serving a customer sitting on a three star chair, then you should receive a three star review. However, for five stars exclusively, you need to serve a five star dish to a customer sitting on a five star chair. Furthermore, you cannot sell seats, so please make sure the amount you buy is proper.
+            </p>
+        </div>
+    </div>
+    <div class="two-column">
+        <div class="screenshots">
+            <img src="screenshot4.jpg">
+        </div>
+        <div class="description">
+            <h2>Supplies</h2>
+            <p>
+                Food supplies are crucial for cooking. You may check the ingredients needed for a dish on the kitchen page. Please note that buying higher tier food supplies requires your overall rating to be higher. Once it reaches 3 stars, all food supplies are fully unlocked.
+            </p>
+        </div>
+    </div>
+    <div class="two-column">
+        <div class="screenshots">
+            <img src="screenshot5.jpg">
+        </div>
+        <div class="description">
+            <h2>Cooking</h2>
+            <p>
+                There are six cooking actions: fry, boil, chop, knead, roast and stir.<br>
+                Fry: Press the button to fry the food.<br>
+                Boil: Click "stop" once the temperature reaches boiling point.<br>
+                Chop: Shake your device like holding a knife to chop the food.<br>
+                Knead: Guide the white circle to the red circle to press the dough.<br>
+                Roast: Remember the numbers pattern before you start roasting.<br>
+                Stir: Drag the bar horizontally rapidly just like stirring the mixture.
+            </p>
+        </div>
+    </div>
+    <div class="two-column">
+        <div class="screenshots">
+            <img src="screenshot6.jpg">
+        </div>
+        <div class="description">
+            <h2>Friends</h2>
+            <p>
+                In the game menu, you can add friends to keep on track of their progress. Make sure you all update the game's progress regularly to let everyone compete with each other!
+            </p>
+        </div>
+    </div>
+    <div class="two-column">
+        <div class="screenshots">
+            <img src="screenshot1.jpg">
+        </div>
+        <div class="description">
+            <h2>Ready?</h2>
+            <p>
+                And that's the tutorial! Once you complete the game, your status will switch to "COOKED" instead of "COOKING". Have fun and keep cooking!
+            </p>
+        </div>
+    </div>
+    <div class="content" style="width: 100%; height: 30px; overflow: hidden;">
+        <img src="bar.png" width=2000 height=5>
+    </div>
+    <div class="content">
+        <p>Start exploring the game!</p>
+    </div>
+    <div class="info-box option-box">
+        <div class="button-group">
+            <a href="home.html" class="option-btn">Reuturn</a>
+            <a href="handbook.html" class="option-btn">Handbook</a>
+            <a href="link3" class="option-btn">Trailer</a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-left">
+            <a href="?lang=en">English</a>
+            <a href="?lang=zh-tw">繁體中文</a>
+            <a href="?lang=es">Español</a>
+        </div>
+        <div class="footer-right">
+            <p>by AnsonLeung16, all rights reserved</p>
+        </div>
+    </footer>
+</body>
