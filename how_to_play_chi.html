@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100%;
+            background-image: url('background2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: Cooked, Arial, sans-serif;
+            color: white;
+        }
+
+        @font-face { 
+            font-family: Cooked; 
+            src: url('working attitude.ttf'); 
+        } 
+
+        .logo {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .logo img {
+            width: 600px;
+            height: auto;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content p {
+            font-size: 3em;
+            margin: 25px;
+        }
+        .info-box {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;           
+            background: rgba(0,0,0,0.5);
+            border-radius: 8px;
+        }
+
+        .info-box .info-logo {
+            flex: 0 0 auto;
+        }
+
+        .info-box .info-logo img {
+            width: 300px;
+            height: auto;
+        }
+
+        .info-box .info-text {
+            flex: 1;
+            margin-left: 20px;
+            font-size: 2em;
+        }
+
+        .option-box {
+            display: flex;
+            background: transparent;
+            border-radius: 0;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 1000px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .option-btn {
+            width: 300px;
+            text-align: center;
+            padding: 12px 0;
+            background-color: #e5ff00;
+            color: black;
+            font-size: 2em;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .option-btn:hover {
+            background-color: #989a00;
+        }
+
+        .footer {
+            width: 100%;
+            max-width: 95%;
+            margin: 40px auto 0;
+            padding: 20px;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-left {
+            margin-right: auto;
+        }
+
+        .footer-left a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 1.1em;
+        }
+
+        .footer-left a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-right {
+            color: white;
+            font-size: 1.1em;
+            text-align: right;
+        }
+
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            width: 90%;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .screenshots {
+            flex: 1;
+        }
+
+        .screenshots img {
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+
+        .description {
+            flex: 2;
+            font-size: 2em;
+            line-height: 1.6;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 6px;
+        }
+    </style>
+    <title>Cooked: how to play</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="title3.png">
+    </div>
+    <div class="content">
+        <p>開辦自己的食品企業！</p>
+    </div>
+    <div class="content" style="width: 100%; height: 30px; overflow: hidden;">
+        <img src="bar.png" width=2000 height=5>
+    </div>
+    <div class="content">
+        <p>怎麼玩</p>
+    </div>
+    <div class="two-column">
+        <div class="screenshots">
+            <img src="screenshot1.jpg">
+        </div>
+        <div class="description">
+            <h2>介紹</h2>
+            <p>
+                歡迎來到《Cooked》！這款遊戲讓你有機會建造和發展一家餐廳，一切都由你掌控！你的目標是在盡可能短的時間內獲得 100 個五星級好評。
+            </p>
+        </div>
+    </div>
+    <div class="two-column">
+        <div class="screenshots">
+            <img src="screenshot2.jpg">
+        </div>
+        <div class="description">
+            <h2>主屏幕</h2>
+            <p>
+                在這個遊戲中，你需要不斷購買椅子和各種用品來維持餐廳的正常運作。你可以點擊螢幕頂部的按鈕切換到三個不同的頁面。座位位於螢幕中央。餐廳分為三個區域（A、B、C），總共有27個座位。要放置座位，你需要進入座位頁面；要移除座位，只需長按即可。完成所有菜色後，長按「下一時段」繼續遊戲。做好應對各種突發狀況的準備吧！某些事件可能會導致你損失或獲得金錢！
+            </p>
+        </div>
+    </div>
+    <div class="two-column">
+        <div class="screenshots">
+            <img src="screenshot3.jpg">
+        </div>
+        <div class="description">
+            <h2>座位</h2>
+            <p>
+                獲得星級評價取決於座位的品質。例如，如果您服務的顧客坐在三星座位上，那麼您就應該獲得三星評價。但是，要獲得五星級評價，您必須為坐在五星級座位上的顧客提供五星級菜餚。此外，座位不能出售，所以請確保您購買的座位數量合適。
+            </p>
+        </div>
+    </div>
+    <div class="two-column">
+        <div class="screenshots">
+            <img src="screenshot4.jpg">
+        </div>
+        <div class="description">
+            <h2>食品供應</h2>
+            <p>
+                食材是烹飪的關鍵。您可以在廚房頁面查看菜餚所需的食材。請注意，購買更高級的食材需要更高的整體評分。評分達到三星後，所有食材都會完全解鎖。
+            </p>
+        </div>
+    </div>
+    <div class="two-column">
+        <div class="screenshots">
+            <img src="screenshot5.jpg">
+        </div>
+        <div class="description">
+            <h2>烹飪</h2>
+            <p>
+                共有六種烹飪操作：煎、煮、切、揉、烤和攪拌。<br>
+                煎：按下按鈕煎炸食物。<br>
+                煮：溫度達到沸點後點選「停止」。<br>
+                切：像握刀一樣搖晃設備來切食物。<br>
+                揉：引導白色圓圈到紅色圓圈處按壓麵團。<br>
+                烤：開始烤前記住數字順序。<br>
+                攪拌：像攪拌混合物一樣快速水平拖曳滑塊。
+            </p>
+        </div>
+    </div>
+    <div class="two-column">
+        <div class="screenshots">
+            <img src="screenshot6.jpg">
+        </div>
+        <div class="description">
+            <h2>好友</h2>
+            <p>
+                在遊戲選單中，您可以新增好友，以便了解他們的遊戲進度。請確保大家定期更新遊戲進度，這樣才能互相競爭！
+            </p>
+        </div>
+    </div>
+    <div class="two-column">
+        <div class="screenshots">
+            <img src="screenshot1.jpg">
+        </div>
+        <div class="description">
+            <h2>準備好？</h2>
+            <p>
+                教學到此結束！遊戲結束後，你的狀態將從「COOKING」變成「COOKED」。祝你玩得開心，Keep cooking!
+            </p>
+        </div>
+    </div>
+    <div class="content" style="width: 100%; height: 30px; overflow: hidden;">
+        <img src="bar.png" width=2000 height=5>
+    </div>
+    <div class="content">
+        <p>開始探索遊戲吧！</p>
+    </div>
+    <div class="info-box option-box">
+        <div class="button-group">
+            <a href="index_chi.html" class="option-btn">返回</a>
+            <a href="handbook_chi.html" class="option-btn">手冊</a>
+            <a href="link3" class="option-btn">遊戲影片</a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-left">
+            <a href="how_to_play.html">English</a>
+            <a href="how_to_play_chi.html">繁體中文</a>
+            <a href="how_to_play_esp.html">Español</a>
+        </div>
+        <div class="footer-right">
+            <p>by AnsonLeung16, 版權所有</p>
+        </div>
+    </footer>
+</body>

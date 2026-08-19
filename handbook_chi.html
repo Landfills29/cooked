@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100%;
+            background-image: url('background2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: Cooked, Arial, sans-serif;
+            color: white;
+        }
+
+        @font-face { 
+            font-family: Cooked; 
+            src: url('working attitude.ttf'); 
+        } 
+
+        .logo {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .logo img {
+            width: 600px;
+            height: auto;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content p {
+            font-size: 3em;
+            margin: 25px;
+        }
+        .info-box {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;           
+            background: rgba(0,0,0,0.5); 
+            border-radius: 8px;
+        }
+
+        .info-box .info-logo {
+            flex: 0 0 auto;
+        }
+
+        .info-box .info-logo img {
+            width: 300px;
+            height: auto;
+        }
+
+        .info-box .info-text {
+            flex: 1;
+            margin-left: 20px;
+            font-size: 2em;
+        }
+
+        .option-box {
+            display: flex;
+            background: transparent;
+            border-radius: 0;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 1000px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .option-btn {
+            width: 300px;
+            text-align: center;
+            padding: 12px 0;
+            background-color: #e5ff00;
+            color: black;
+            font-size: 2em;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .option-btn:hover {
+            background-color: #989a00;
+        }
+
+        .footer {
+            width: 100%;
+            max-width: 95%;
+            margin: 40px auto 0;
+            padding: 20px;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-left {
+            margin-right: auto;
+        }
+
+        .footer-left a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 1.1em;
+        }
+
+        .footer-left a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-right {
+            color: white;
+            font-size: 1.1em;
+            text-align: right;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background: rgb(173, 173, 173);
+            table-layout: fixed;
+        }
+
+        th, td {
+            border: 1px solid #000000;
+            padding: 12px 20px;
+            text-align: center;
+            font-size: 1.2em;
+            width: 50%;
+            color: black;
+        }
+
+        th {
+            background: #fbff00;
+            color: black;
+        }
+
+        tr:nth-child(even) {
+            background: #dcdcdc;
+        }
+
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+    </style>
+    <title>Cooked: handbook</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="title3.png">
+    </div>
+    <div class="content">
+        <p>開辦自己的食品企業！</p>
+    </div>
+    <div class="content" style="width: 100%; height: 30px; overflow: hidden;">
+        <img src="bar.png" width=2000 height=5>
+    </div>
+    <div class="content">
+        <p>手冊</p>
+    </div>
+    <table>
+        <caption>食品供應清單</caption>
+        <tr>
+            <th>食品供應品名稱</th>
+            <th>成本</th>
+        </tr>
+        <tr>
+            <td>米飯</td>
+            <td>$1</td>
+        </tr>
+        <tr>
+            <td>面食</td>
+            <td>$3</td>
+        </tr>        
+        <tr>
+            <td>麵粉</td>
+            <td>$10</td>
+        </tr>
+        <tr>
+            <td>玉米</td>
+            <td>$25</td>
+        </tr>
+        <tr>
+            <td>燕麥</td>
+            <td>$50</td>
+        </tr>
+        <tr>
+            <td>蛋類</td>
+            <td>$2</td>
+        </tr>
+        <tr>
+            <td>豆類</td>
+            <td>$6</td>
+        </tr>
+        <tr>
+            <td>肉類</td>
+            <td>$14</td>
+        </tr>
+        <tr>
+            <td>乳製品</td>
+            <td>$30</td>
+        </tr>
+        <tr>
+            <td>海鮮</td>
+            <td>$60</td>
+        </tr>
+        <tr>
+            <td>蔬菜</td>
+            <td>$1</td>
+        </tr>
+        <tr>
+            <td>瓜類</td>
+            <td>$5</td>
+        </tr>        
+        <tr>
+            <td>水果</td>
+            <td>$10</td>
+        </tr>
+        <tr>
+            <td>芳香食品</td>
+            <td>$15</td>
+        </tr>
+        <tr>
+            <td>根莖類蔬菜</td>
+            <td>$20</td>
+        </tr>
+        <tr>
+            <td>鹽</td>
+            <td>$1</td>
+        </tr>
+        <tr>
+            <td>油</td>
+            <td>$3</td>
+        </tr>
+        <tr>
+            <td>糖</td>
+            <td>$5</td>
+        </tr>
+        <tr>
+            <td>醬汁</td>
+            <td>$10</td>
+        </tr>
+        <tr>
+            <td>酒</td>
+            <td>$30</td>
+        </tr>
+    </table>
+    <table>
+        <caption>菜色清單</caption>
+        <tr>
+            <th>菜色名稱</th>
+            <th>所需食材</th>
+            <th>步驟</th>
+            <th>價格</th>
+        </tr>
+        <tr>
+            <td>煎蛋</td>
+            <td>蛋類:2 鹽:1</td>
+            <td>煎</td>
+            <td>$6</td>
+        </tr>
+        <tr>
+            <td>水煮蔬菜</td>
+            <td>蔬菜:1 鹽:1</td>
+            <td>煮</td>
+            <td>$5</td>
+        </tr>
+        <tr>
+            <td>蔬菜蛋炒飯</td>
+            <td>米飯:2 蛋類:1 蔬菜:1</td>
+            <td>切->煎</td>
+            <td>$8</td>
+        </tr>
+        <tr>
+            <td>炒蛋義大利麵</td>
+            <td>蛋類:1 鹽:1 面食:2</td>
+            <td>煎->煮</td>
+            <td>$13</td>
+        </tr>
+        <tr>
+            <td>義大利麵豆湯</td>
+            <td>面食:1 豆類:2</td>
+            <td>切->煎</td>
+            <td>$20</td>
+        </tr>
+        <tr>
+            <td>蒜蓉油意麵</td>
+            <td>面食:2 油:1</td>
+            <td>烤->煎->煎</td>
+            <td>$15</td>
+        </tr>
+        <tr>
+            <td>牛肉炒飯</td>
+            <td>米飯:2 油:2 肉類: 1</td>
+            <td>切->煮->煎</td>
+            <td>$26</td>
+        </tr>
+        <tr>
+            <td>南瓜餅</td>
+            <td>瓜類:2 麵粉:1</td>
+            <td>切->揉->煮</td>
+            <td>$28</td>
+        </tr>
+        <tr>
+            <td>猪肉桃子意面沙拉</td>
+            <td>面食:1 肉類:1 水果:1</td>
+            <td>煎->切->攪拌</td>
+            <td>$36</td>
+        </tr>
+        <tr>
+            <td>一鍋西班牙米飯</td>
+            <td>米飯:2 豆類:1 肉類:1 芳香食品:1</td>
+            <td>煎->切->攪拌->煎</td>
+            <td>$47</td>
+        </tr>
+        <tr>
+            <td>蒜香佛卡夏麵包</td>
+            <td>鹽:1 麵粉:2 糖:1 芳香食品:1</td>
+            <td>切->烤->揉->烤</td>
+            <td>$52</td>
+        </tr>
+        <tr>
+            <td>夏季沙拉</td>
+            <td>蔬菜:1 瓜類:1 水果:1 玉米:1</td>
+            <td>切->切->攪拌->攪拌</td>
+            <td>$53</td>
+        </tr>
+        <tr>
+            <td>可麗餅</td>
+            <td>麵粉:1 糖:1 乳製品:1</td>
+            <td>攪拌->揉->煎->煎</td>
+            <td>$58</td>
+        </tr>
+        <tr>
+            <td>燒烤手撕豬肉</td>
+            <td>麵粉:1 肉類:1 芳香食品:1 醬汁:1</td>
+            <td>揉->烤->切->攪拌</td>
+            <td>$63</td>
+        </tr>
+        <tr>
+            <td>奶油番茄義面</td>
+            <td>面食:2 乳製品:1 芳香食品:1 醬汁:1</td>
+            <td>煮->煎->煎->煮->攪拌</td>
+            <td>$76</td>
+        </tr>
+        <tr>
+            <td>玉米雜燴</td>
+            <td>玉米:1 乳製品:1 芳香食品:1</td>
+            <td>煮->切->煮->攪拌->攪拌</td>
+            <td>$86</td>
+        </tr>
+        <tr>
+            <td>鹹味燕麥粥</td>
+            <td>蛋類:1 玉米:1 燕麥:1</td>
+            <td>煮->煎->煮->攪拌->攪拌</td>
+            <td>$94</td>
+        </tr>
+        <tr>
+            <td>蔬菜義大利麵</td>
+            <td>面食:2 根莖類蔬菜:2 酒:1</td>
+            <td>煮->切->煎->切->攪拌</td>
+            <td>$94</td>
+        </tr>
+        <tr>
+            <td>烤蛤蜊</td>
+            <td>蔬菜:1 芳香食品:1 海鮮:1 酒:1</td>
+            <td>切->切->煮->烤->烤</td>
+            <td>$125</td>
+        </tr>
+        <tr>
+            <td>辣椒蟹</td>
+            <td>蛋類:1 芳香食品:1 醬汁:1 海鮮:2</td>
+            <td>切->煎->煮->煮->攪拌</td>
+            <td>$167</td>
+        </tr>
+    </table>
+    <table>
+        <caption>座位清單</caption>
+        <tr>
+            <th>星</th>
+            <th>成本</th>
+            <th>賞錢</th>
+            <th>想要食物機率</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>$50</td>
+            <td>$0~$3</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>$200</td>
+            <td>$1~$4</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>$500</td>
+            <td>$4~$7</td>
+            <td>1.25%</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>$1200</td>
+            <td>$8~$11</td>
+            <td>2%</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>$2500</td>
+            <td>$12~$15</td>
+            <td>5%</td>
+        </tr>
+    </table>
+    <table>
+        <caption>烹飪步驟標準清單</caption>
+        <tr>
+            <th>步驟</th>
+            <th>1~2 星</th>
+            <th>3~4 星</th>
+            <th>5 星</th>
+        </tr>
+        <tr>
+            <td>煎 (時間誤差)</td>
+            <td>2秒內</td>
+            <td>1秒內</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>煮 (溫度誤差)</td>
+            <td>10℃以內</td>
+            <td>6℃以內</td>
+            <td>3℃以內</td>
+        </tr>
+        <tr>
+            <td>切 (最少次數)</td>
+            <td>8</td>
+            <td>13</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>揉 (最少次數)</td>
+            <td>3</td>
+            <td>5</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>烤 (最低正確數量)</td>
+            <td>5</td>
+            <td>7</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>攪拌 (最少次數)</td>
+            <td>15</td>
+            <td>22</td>
+            <td>28</td>
+        </tr>
+    </table>
+    <table>
+        <caption>食品品質清單</caption>
+        <tr>
+            <th>星</th>
+            <th>達到高分 (0.8)</th>
+            <th>無法達到平均分 (0.6)</th>
+        </tr>
+        <tr>
+            <td>2~3 星</td>
+            <td>+0.2</td>
+            <td>不變</td>
+        </tr>
+        <tr>
+            <td>4 星</td>
+            <td>+0.5</td>
+            <td>-0.1</td>
+        </tr>
+        <tr>
+            <td>5 星</td>
+            <td>+1</td>
+            <td>-0.5</td>
+        </tr>
+    </table>
+    <table>
+        <caption>食品品質獎勵清單</caption>
+        <tr>
+            <th>食品品質百分比</th>
+            <th>獎金</th>
+        </tr>
+        <tr>
+            <td>30%+</td>
+            <td>$5</td>
+        </tr>
+        <tr>
+            <td>50%+</td>
+            <td>$10</td>
+        </tr>
+        <tr>
+            <td>80%+</td>
+            <td>$15</td>
+        </tr>
+    </table>
+    <table>
+        <caption>整體評分清單</caption>
+        <tr>
+            <th>星</th>
+            <th>要求</th>
+        </tr>
+        <tr>
+            <td>1 星</td>
+            <td>20 評價(1 星)</td>
+        </tr>
+        <tr>
+            <td>2 星</td>
+            <td>40 評價(2 星)</td>
+        </tr>
+        <tr>
+            <td>3 星</td>
+            <td>60 評價(3 星)</td>
+        </tr>
+        <tr>
+            <td>4 星</td>
+            <td>80 評價(4 星)</td>
+        </tr>
+        <tr>
+            <td>5 星 (完成遊戲)</td>
+            <td>100 評價(5 星)</td>
+        </tr>
+    </table>
+    <table>
+        <caption>事件清單</caption>
+        <tr>
+            <th>事件名稱</th>
+            <th>可能性</th>
+            <th>影響</th>
+        </tr>
+        <tr>
+            <td>颱風</td>
+            <td>1%</td>
+            <td>跳過 1 天</td>
+        </tr>
+        <tr>
+            <td>明星</td>
+            <td>1%</td>
+            <td>收益 x1.2</td>
+        </tr>
+        <tr>
+            <td>罰款</td>
+            <td>1%</td>
+            <td>支出 +50/100/200/400/800 (取決於整體評分)</td>
+        </tr>
+    </table>
+    <div class="content" style="width: 100%; height: 30px; overflow: hidden;">
+        <img src="bar.png" width=2000 height=5>
+    </div>
+    <div class="content">
+        <p>開始探索遊戲吧！</p>
+    </div>
+    <div class="info-box option-box">
+        <div class="button-group">
+            <a href="how_to_play_chi.html" class="option-btn">怎麼玩</a>
+            <a href="index_chi.html" class="option-btn">返回</a>
+            <a href="link3" class="option-btn">遊戲影片</a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-left">
+            <a href="handbook.html">English</a>
+            <a href="handbook_chi.html">繁體中文</a>
+            <a href="handbook_esp.html">Español</a>
+        </div>
+        <div class="footer-right">
+            <p>by AnsonLeung16, 版權所有</p>
+        </div>
+    </footer>
+</body>

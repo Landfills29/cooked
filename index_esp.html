@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-image: url('background2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: Cooked, Arial, sans-serif;
+            color: white;
+        }
+
+        @font-face { 
+            font-family: Cooked; 
+            src: url('working attitude.ttf'); 
+        } 
+
+        .logo {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .logo img {
+            width: 600px;
+            height: auto;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content p {
+            font-size: 3em;
+            margin: 25px;
+        }
+        .info-box {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;           
+            background: rgba(0,0,0,0.5);
+            border-radius: 8px;
+        }
+
+        .info-box .info-logo {
+            flex: 0 0 auto;
+        }
+
+        .info-box .info-logo img {
+            width: 300px;
+            height: auto;
+        }
+
+        .info-box .info-text {
+            flex: 1;
+            margin-left: 20px;
+            font-size: 2em;
+        }
+        .download-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 24px;
+            background-color: #00ca1b;
+            color: black;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background-color: lab(87.87% -84.45 74.54);
+        }
+
+        .option-box {
+            display: flex;
+            background: transparent;
+            border-radius: 0;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 1000px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .option-btn {
+            width: 300px;
+            text-align: center;
+            padding: 12px 0;
+            background-color: #e5ff00;
+            color: black;
+            font-size: 2em;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .option-btn:hover {
+            background-color: #989a00;
+        }
+
+        .footer {
+            width: 100%;
+            max-width: 95%;
+            margin: 40px auto 0;
+            padding: 20px;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-left {
+            margin-right: auto;
+        }
+
+        .footer-left a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 1.1em;
+        }
+
+        .footer-left a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-right {
+            color: white;
+            font-size: 1.1em;
+            text-align: right;
+        }
+    </style>
+    <title>Cooked: home</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="title3.png">
+    </div>
+    <div class="content">
+        <p>¡Inicia tu propio negocio de comida!</p>
+    </div>
+    <div class="content" style="width: 100%; height: 30px; overflow: hidden;">
+        <img src="bar.png" width=2000 height=5>
+    </div>
+    <div class="content">
+        <p>Descarga la última versión aquí.</p>
+    </div>
+    <div class="info-box">
+        <div class="info-logo">
+            <img src="icon.png">
+        </div>
+        <div class="info-text">
+            <p>COOKED(BETA) (Versión de Android)<br>V.1.0.0<br>Idioma: English 繁體中文 español<br>Tamaño: 24MB</p>
+            <a href="Cooked(BETA).apk" class="download-btn">Descargar ahora</a>
+        </div>
+    </div>
+    <div class="content" style="width: 100%; height: 30px; overflow: hidden;">
+        <img src="bar.png" width=2000 height=5>
+    </div>
+    <div class="content">
+        <p>¡Empieza a explorar el juego!</p>
+    </div>
+    <div class="info-box option-box">
+        <div class="button-group">
+            <a href="how_to_play_esp.html" class="option-btn">como jugar</a>
+            <a href="handbook_esp.html" class="option-btn">manual</a>
+            <a href="link3" class="option-btn">tráiler</a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-left">
+            <a href="index.html">English</a>
+            <a href="index_chi.html">繁體中文</a>
+            <a href="index_esp.html">Español</a>
+        </div>
+        <div class="footer-right">
+            <p>by AnsonLeung16, reservados todos los derechos</p>
+        </div>
+    </footer>
+</body>

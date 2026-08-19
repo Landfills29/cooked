@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100%;
+            background-image: url('background2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: Cooked, Arial, sans-serif;
+            color: white;
+        }
+
+        @font-face { 
+            font-family: Cooked; 
+            src: url('working attitude.ttf'); 
+        } 
+
+        .logo {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .logo img {
+            width: 600px;
+            height: auto;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content p {
+            font-size: 3em;
+            margin: 25px;
+        }
+        .info-box {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;           
+            background: rgba(0,0,0,0.5); 
+            border-radius: 8px;
+        }
+
+        .info-box .info-logo {
+            flex: 0 0 auto;
+        }
+
+        .info-box .info-logo img {
+            width: 300px;
+            height: auto;
+        }
+
+        .info-box .info-text {
+            flex: 1;
+            margin-left: 20px;
+            font-size: 2em;
+        }
+
+        .option-box {
+            display: flex;
+            background: transparent;
+            border-radius: 0;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 1000px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .option-btn {
+            width: 300px;
+            text-align: center;
+            padding: 12px 0;
+            background-color: #e5ff00;
+            color: black;
+            font-size: 2em;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .option-btn:hover {
+            background-color: #989a00;
+        }
+
+        .footer {
+            width: 100%;
+            max-width: 95%;
+            margin: 40px auto 0;
+            padding: 20px;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-left {
+            margin-right: auto;
+        }
+
+        .footer-left a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 1.1em;
+        }
+
+        .footer-left a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-right {
+            color: white;
+            font-size: 1.1em;
+            text-align: right;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background: rgb(173, 173, 173);
+            table-layout: fixed;
+        }
+
+        th, td {
+            border: 1px solid #000000;
+            padding: 12px 20px;
+            text-align: center;
+            font-size: 1.2em;
+            width: 50%;
+            color: black;
+        }
+
+        th {
+            background: #fbff00;
+            color: black;
+        }
+
+        tr:nth-child(even) {
+            background: #dcdcdc;
+        }
+
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+    </style>
+    <title>Cooked: handbook</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="title3.png">
+    </div>
+    <div class="content">
+        <p>¡Inicia tu propio negocio de comida!</p>
+    </div>
+    <div class="content" style="width: 100%; height: 30px; overflow: hidden;">
+        <img src="bar.png" width=2000 height=5>
+    </div>
+    <div class="content">
+        <p>Manual</p>
+    </div>
+    <table>
+        <caption>Lista de costos de suministros</caption>
+        <tr>
+            <th>Nombre de los suministros</th>
+            <th>Costo</th>
+        </tr>
+        <tr>
+            <td>arroz</td>
+            <td>$1</td>
+        </tr>
+        <tr>
+            <td>pastas</td>
+            <td>$3</td>
+        </tr>        
+        <tr>
+            <td>harina</td>
+            <td>$10</td>
+        </tr>
+        <tr>
+            <td>maíz</td>
+            <td>$25</td>
+        </tr>
+        <tr>
+            <td>avena</td>
+            <td>$50</td>
+        </tr>
+        <tr>
+            <td>huevo</td>
+            <td>$2</td>
+        </tr>
+        <tr>
+            <td>frijoles</td>
+            <td>$6</td>
+        </tr>
+        <tr>
+            <td>carnes</td>
+            <td>$14</td>
+        </tr>
+        <tr>
+            <td>lácteos</td>
+            <td>$30</td>
+        </tr>
+        <tr>
+            <td>mariscos</td>
+            <td>$60</td>
+        </tr>
+        <tr>
+            <td>verduras</td>
+            <td>$1</td>
+        </tr>
+        <tr>
+            <td>calabazas</td>
+            <td>$5</td>
+        </tr>        
+        <tr>
+            <td>fruta</td>
+            <td>$10</td>
+        </tr>
+        <tr>
+            <td>aromáticos</td>
+            <td>$15</td>
+        </tr>
+        <tr>
+            <td>verduras de raíz</td>
+            <td>$20</td>
+        </tr>
+        <tr>
+            <td>sal</td>
+            <td>$1</td>
+        </tr>
+        <tr>
+            <td>aceite</td>
+            <td>$3</td>
+        </tr>
+        <tr>
+            <td>azúcar</td>
+            <td>$5</td>
+        </tr>
+        <tr>
+            <td>salsas</td>
+            <td>$10</td>
+        </tr>
+        <tr>
+            <td>alcohol</td>
+            <td>$30</td>
+        </tr>
+    </table>
+    <table>
+        <caption>Lista de platos</caption>
+        <tr>
+            <th>Nombre de los platos</th>
+            <th>Requisito</th>
+            <th>Paso</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>huevos fritos</td>
+            <td>huevo:2 sal:1</td>
+            <td>freír</td>
+            <td>$6</td>
+        </tr>
+        <tr>
+            <td>verduras escalfadas</td>
+            <td>verduras:1 sal:1</td>
+            <td>hervir</td>
+            <td>$5</td>
+        </tr>
+        <tr>
+            <td>arroz frito con huevo y verduras</td>
+            <td>arroz:2 huevo:1 verduras:1</td>
+            <td>cortar->freír</td>
+            <td>$8</td>
+        </tr>
+        <tr>
+            <td>pasta con huevo revuelto</td>
+            <td>huevo:1 sal:1 pastas:2</td>
+            <td>freír->hervir</td>
+            <td>$13</td>
+        </tr>
+        <tr>
+            <td>pastas y frijoles</td>
+            <td>pastas:1 frijoles:2</td>
+            <td>cortar->freír</td>
+            <td>$20</td>
+        </tr>
+        <tr>
+            <td>espaguetis con ajo y aceite</td>
+            <td>pastas:2 aceite:1</td>
+            <td>asar->freír->freír</td>
+            <td>$15</td>
+        </tr>
+        <tr>
+            <td>arroz frito con carne</td>
+            <td>arroz:2 aceite:2 carnes: 1</td>
+            <td>cortar->hervir->freír</td>
+            <td>$26</td>
+        </tr>
+        <tr>
+            <td>buñuelos de calabaza</td>
+            <td>calabazas:2 harina:1</td>
+            <td>cortar->amasar->hervir</td>
+            <td>$28</td>
+        </tr>
+        <tr>
+            <td>ensalada de pasta con cerdo y melocotón</td>
+            <td>pastas:1 carnes:1 fruta:1</td>
+            <td>freír->cortar->remover</td>
+            <td>$36</td>
+        </tr>
+        <tr>
+            <td>arroz español en una sola olla</td>
+            <td>arroz:2 frijoles:1 carnes:1 aromáticos:1</td>
+            <td>freír->cortar->remover->freír</td>
+            <td>$47</td>
+        </tr>
+        <tr>
+            <td>focaccia de ajo</td>
+            <td>sal:1 harina:2 azúcar:1 aromáticos:1</td>
+            <td>cortar->asar->amasar->asar</td>
+            <td>$52</td>
+        </tr>
+        <tr>
+            <td>ensalada de verano</td>
+            <td>verduras:1 calabazas:1 fruta:1 maíz:1</td>
+            <td>cortar->cortar->remover->remover</td>
+            <td>$53</td>
+        </tr>
+        <tr>
+            <td>crepe</td>
+            <td>harina:1 azúcar:1 lácteos:1</td>
+            <td>remover->amasar->freír->freír</td>
+            <td>$58</td>
+        </tr>
+        <tr>
+            <td>cerdo desmenuzado a la barbacoa</td>
+            <td>harina:1 carnes:1 aromáticos:1 salsas:1</td>
+            <td>amasar->asar->cortar->remover</td>
+            <td>$63</td>
+        </tr>
+        <tr>
+            <td>pasta cremosa de tomate</td>
+            <td>pastas:2 lácteos:1 aromáticos:1 salsas:1</td>
+            <td>hervir->freír->freír->hervir->remover</td>
+            <td>$76</td>
+        </tr>
+        <tr>
+            <td>sopa de maíz</td>
+            <td>maíz:1 lácteos:1 aromáticos:1</td>
+            <td>hervir->cortar->hervir->remover->remover</td>
+            <td>$86</td>
+        </tr>
+        <tr>
+            <td>avena salada</td>
+            <td>huevo:1 maíz:1 avena:1</td>
+            <td>hervir->freír->hervir->remover->remover</td>
+            <td>$94</td>
+        </tr>
+        <tr>
+            <td>pasta vegetariana</td>
+            <td>pastas:2 verduras de raíz:2 alcohol:1</td>
+            <td>hervir->cortar->freír->cortar->remover</td>
+            <td>$94</td>
+        </tr>
+        <tr>
+            <td>almejas asadas</td>
+            <td>verduras:1 aromáticos:1 mariscos:1 alcohol:1</td>
+            <td>cortar->cortar->hervir->asar->asar</td>
+            <td>$125</td>
+        </tr>
+        <tr>
+            <td>Cangrejo con chile</td>
+            <td>huevo:1 aromáticos:1 salsas:1 mariscos:2</td>
+            <td>cortar->freír->hervir->hervir->remover</td>
+            <td>$167</td>
+        </tr>
+    </table>
+    <table>
+        <caption>Lista de asientos</caption>
+        <tr>
+            <th>Estrella</th>
+            <th>Costo</th>
+            <th>Gama de consejos</th>
+            <th>Probabilidad de desear comida</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>$50</td>
+            <td>$0~$3</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>$200</td>
+            <td>$1~$4</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>$500</td>
+            <td>$4~$7</td>
+            <td>1.25%</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>$1200</td>
+            <td>$8~$11</td>
+            <td>2%</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>$2500</td>
+            <td>$12~$15</td>
+            <td>5%</td>
+        </tr>
+    </table>
+    <table>
+        <caption>Lista estándar de pasos de cocción</caption>
+        <tr>
+            <th>Paso</th>
+            <th>1~2 estrellas</th>
+            <th>3~4 estrellas</th>
+            <th>5 estrellas</th>
+        </tr>
+        <tr>
+            <td>freír (error de tiempo)</td>
+            <td>dentro de 2 segundos</td>
+            <td>en 1 segundo</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>hervir (error de temperatura)</td>
+            <td>dentro de 10℃</td>
+            <td>dentro de 6℃</td>
+            <td>dentro de 3℃</td>
+        </tr>
+        <tr>
+            <td>cortar (número mínimo de veces)</td>
+            <td>8</td>
+            <td>13</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>amasar (número mínimo de veces)</td>
+            <td>3</td>
+            <td>5</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>asar (número mínimo de pedidos correctos)</td>
+            <td>5</td>
+            <td>7</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>remover (número mínimo de veces)</td>
+            <td>15</td>
+            <td>22</td>
+            <td>28</td>
+        </tr>
+    </table>
+    <table>
+        <caption>Lista de calidad de los alimentos</caption>
+        <tr>
+            <th>plato estrella</th>
+            <th>Alcanza una puntuación alta (0.8)</th>
+            <th>No puede alcanzar la puntuación media. (0.6)</th>
+        </tr>
+        <tr>
+            <td>2~3 estrellas</td>
+            <td>+0.2</td>
+            <td>sin cambios</td>
+        </tr>
+        <tr>
+            <td>4 estrellas</td>
+            <td>+0.5</td>
+            <td>-0.1</td>
+        </tr>
+        <tr>
+            <td>5 estrellas</td>
+            <td>+1</td>
+            <td>-0.5</td>
+        </tr>
+    </table>
+    <table>
+        <caption>Lista de premios a la calidad de los alimentos</caption>
+        <tr>
+            <th>Porcentaje de calidad de los alimentos</th>
+            <th>Dinero otorgado</th>
+        </tr>
+        <tr>
+            <td>30%+</td>
+            <td>$5</td>
+        </tr>
+        <tr>
+            <td>50%+</td>
+            <td>$10</td>
+        </tr>
+        <tr>
+            <td>80%+</td>
+            <td>$15</td>
+        </tr>
+    </table>
+    <table>
+        <caption>Lista de calificación general</caption>
+        <tr>
+            <th>Estrellas generales</th>
+            <th>Requisito</th>
+        </tr>
+        <tr>
+            <td>1 estrella</td>
+            <td>20 reseñas de comida(1 estrella)</td>
+        </tr>
+        <tr>
+            <td>2 estrellas</td>
+            <td>40 reseñas de comida(2 estrellas)</td>
+        </tr>
+        <tr>
+            <td>3 estrellas</td>
+            <td>60 reseñas de comida(3 estrellas)</td>
+        </tr>
+        <tr>
+            <td>4 estrellas</td>
+            <td>80 reseñas de comida(4 estrellas)</td>
+        </tr>
+        <tr>
+            <td>5 estrellas (beat the game)</td>
+            <td>100 reseñas de comida(5 estrellas)</td>
+        </tr>
+    </table>
+    <table>
+        <caption>Lista de eventos</caption>
+        <tr>
+            <th>Nombre del evento</th>
+            <th>Probabilidad</th>
+            <th>Efecto</th>
+        </tr>
+        <tr>
+            <td>Tifón</td>
+            <td>1%</td>
+            <td>saltar 1 día</td>
+        </tr>
+        <tr>
+            <td>Celebridad</td>
+            <td>1%</td>
+            <td>ingreso x1.2</td>
+        </tr>
+        <tr>
+            <td>bien</td>
+            <td>1%</td>
+            <td>gastos +50/100/200/400/800 (depende del total)</td>
+        </tr>
+    </table>
+    <div class="content" style="width: 100%; height: 30px; overflow: hidden;">
+        <img src="bar.png" width=2000 height=5>
+    </div>
+    <div class="content">
+        <p>¡Empieza a explorar el juego!</p>
+    </div>
+    <div class="info-box option-box">
+        <div class="button-group">
+            <a href="how_to_play_esp.html" class="option-btn">como jugar</a>
+            <a href="index_esp.html" class="option-btn">devolver</a>
+            <a href="link3" class="option-btn">tráiler</a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-left">
+            <a href="handbook.html">English</a>
+            <a href="handbook_chi.html">繁體中文</a>
+            <a href="handbook_esp.html">Español</a>
+        </div>
+        <div class="footer-right">
+            <p>by AnsonLeung16, reservados todos los derechos</p>
+        </div>
+    </footer>
+</body>
